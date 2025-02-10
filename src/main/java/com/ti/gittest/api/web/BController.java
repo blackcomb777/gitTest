@@ -15,6 +15,7 @@ public class BController {
 
     @PostMapping(value = "/greet", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Object> greet(@RequestBody Map<String, String> bodyMap) {
+        System.out.println(bodyMap);
         return ResponseEntity.ok().body("Hello 민수");
     }
 
