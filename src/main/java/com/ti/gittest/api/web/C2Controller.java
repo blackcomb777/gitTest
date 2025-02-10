@@ -16,7 +16,7 @@ public class C2Controller {
     @PostMapping(value = "/greetC2", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Object> greet(@RequestBody Map<String, String> bodyMap) {
         System.out.println(bodyMap);
-        return ResponseEntity.ok().body("Hello C2~~~~");
+        return ResponseEntity.ok().body("Hello C2111~~~~");
     }
 
 }
